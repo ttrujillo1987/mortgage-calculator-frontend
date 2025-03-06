@@ -58,9 +58,6 @@ const SummaryPage = ({ annualIncome, monthlyDebts, downPayment, selectedState, p
           <h2 className="text-2xl font-semibold text-center mt-4 mb-4">Mortgage Payment Breakdown</h2>
           <MortgageBreakdownChart mortgageBreakdown={mortgageBreakdown} />
         </div>
-        <div>
-          <MortgageNewsSection />
-        </div>
       </div>
     </div>
   );
