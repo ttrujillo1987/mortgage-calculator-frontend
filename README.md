@@ -6,7 +6,7 @@ This is the frontend for the Home Purchase Affordability Calculator, a tool that
 - Step-by-step input flow for user-friendly data entry
 - Dynamic affordability calculations based on user inputs
 - Pie chart visualization of mortgage payment breakdown
-- Latest mortgage news fetched via NewsAPI
+- ~Latest mortgage news fetched via NewsAPI~ Removed for now due to NewsAPI CORS only allowing localhost on Developer tier
 - Responsive design using Tailwind CSS
 
 ## Tech Stack
@@ -65,7 +65,7 @@ frontend/
 1. Enter financial details step by step.
 2. View estimated home affordability on the summary page.
 3. Edit values on the summary page for real-time updates.
-4. Click "Show Latest Mortgage News" to fetch news articles.
+4. ~Click "Show Latest Mortgage News" to fetch news articles.~
 
 ## Deployment
 To build for production, run:
