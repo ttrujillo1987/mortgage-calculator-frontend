@@ -33,10 +33,10 @@ const SummaryPage = ({ annualIncome, monthlyDebts, downPayment, selectedState, p
   if (!affordability) return <p>Loading affordability details...</p>;
 
   const mortgageBreakdown = {
-    principalInterest: affordability.monthlyMortgage,
-    propertyTax: affordability.monthlyPropertyTax,
-    homeInsurance: affordability.monthlyInsurance,
-    pmi: affordability.pmi || 0, // Default 0 if PMI not entered yet
+    principalInterest: affordability.monthlyMortgageChart,
+    propertyTax: affordability.monthlyPropertyTaxChart,
+    homeInsurance: affordability.monthlyInsuranceChart,
+    pmi: affordability.monthlyPMIChart || 0, // Default 0 if PMI not entered yet
     hoa: hoa || 0, // Default 0 if HOA not entered yet
   };
 
