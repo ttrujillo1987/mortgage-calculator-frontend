@@ -101,11 +101,11 @@ export const calculateAffordability = async ({
   
     // Final mortgage breakdown
     return {
-        estimatedHomePrice: Math.round(estimatedHomePrice),
-        loanAmount: Math.round(loanAmount),
+        estimatedHomePrice: Math.round(estimatedHomePrice).toLocaleString('en-US'),
+        loanAmount: Math.round(loanAmount).toLocaleString('en-US'),
         monthlyMortgage: Math.round(maxMortgagePayment).toLocaleString('en-US'),
         monthlyMortgageChart: Math.round(maxMortgagePayment),
-        totalMonthlyPayment: Math.round(totalMonthlyPayment),
+        totalMonthlyPayment: Math.round(totalMonthlyPayment).toLocaleString('en-US'),
         monthlyPMI: Math.round(monthlyPMI).toLocaleString('en-US'),
         monthlyPMIChart: Math.round(monthlyPMI),
         monthlyPropertyTax: Math.round(monthlyPropertyTax).toLocaleString('en-US'),
