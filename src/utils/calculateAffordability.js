@@ -1,6 +1,7 @@
 export const fetchStateRates = async (selectedState) => {
+  const API_BASE_URL = "https://mortgage-calculator-backend-beql.onrender.com";
     try {
-      const response = await fetch(`http://localhost:5001/api/stateRates/${selectedState}`);
+      const response = await fetch(`${API_BASE_URL}/api/stateRates/${selectedState}`);
       if (!response.ok) {
         throw new Error("Failed to fetch state rates");
       }
@@ -13,7 +14,7 @@ export const fetchStateRates = async (selectedState) => {
 
   export const fetchMortgageRate = async (rateTerm) => {
     try {
-      const response = await fetch(`http://localhost:5001/api/mortgageRates/${rateTerm}`);
+      const response = await fetch(`${API_BASE_URL}/api/mortgageRates/${rateTerm}`);
       if (!response.ok) {
         throw new Error("Failed to fetch mortgage rates");
       }
