@@ -1,5 +1,6 @@
+const API_BASE_URL = "https://mortgage-calculator-backend-beql.onrender.com";
+
 export const fetchStateRates = async (selectedState) => {
-  const API_BASE_URL = "https://mortgage-calculator-backend-beql.onrender.com";
     try {
       const response = await fetch(`${API_BASE_URL}/api/stateRates/${selectedState}`);
       if (!response.ok) {
